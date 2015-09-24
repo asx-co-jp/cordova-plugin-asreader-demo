@@ -1,0 +1,53 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AsReader\"><param name=\"ios-package\" value=\"AsReader\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "ExternalAccessory.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UISupportedExternalAccessoryProtocols": [
+                        {
+                            "xml": "<array><string>jp.co.asx.asreader.barcode</string><string>jp.co.asx.asreader.rfid</string><string>jp.co.asx.asreader.6dongle.barcode</string><string>jp.co.asx.asreader.6dongle.rfid</string></array>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.asreader.demo"
+        },
+        "com.asreader.cdv": {
+            "PACKAGE_NAME": "com.asreader.demo"
+        }
+    },
+    "dependent_plugins": {}
+}
