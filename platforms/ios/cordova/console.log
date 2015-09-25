@@ -2616,3 +2616,59 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-09-25 18:09:04.998 AsReaderDemo[7868:254628] plugged = 0
 2015-09-25 18:09:04.998 AsReaderDemo[7868:254628] -[AsReader pluggedRfid:],called
 2015-09-25 18:09:04.999 AsReaderDemo[7868:254628] rfidPluggedListenerCallbackId:XcL
+2015-09-25 18:40:33.916 AsReaderDemo[8741:266346] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Data/Application/BD3DFBB3-230F-48BC-A241-99A233899A4E/Library/Cookies/Cookies.binarycookies
+2015-09-25 18:40:34.251 AsReaderDemo[8741:266346] Apache Cordova native platform version 3.9.1 is starting.
+2015-09-25 18:40:34.252 AsReaderDemo[8741:266346] Multi-tasking -> Device: YES, App: YES
+2015-09-25 18:40:34.268 AsReaderDemo[8741:266346] Unlimited access to network resources
+2015-09-25 18:40:34.279 AsReaderDemo[8741:266346] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-25 18:40:35.413 AsReaderDemo[8741:266346] Resetting plugins due to page load.
+2015-09-25 18:40:35.680 AsReaderDemo[8741:266346] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Bundle/Application/6657DE7A-5A95-403B-8E2F-DE9E493A76F0/AsReaderDemo.app/www/index.html
+2015-09-25 18:40:35.866 AsReaderDemo[8741:266346] -[AsReader pluginInitialize],called
+2015-09-25 18:40:35.867 AsReaderDemo[8741:266346] -[AsReader barcodeRcp],called
+2015-09-25 18:40:35.869 AsReaderDemo[8741:266346] -[AsReader rfidRcp],called
+2015-09-25 18:40:35.869 AsReaderDemo[8741:266346] -[AsReader setBarcodePluggedListener:],called
+2015-09-25 18:40:35.880 AsReaderDemo[8741:266346] -[AsReader setRfidPluggedListener:],called
+2015-09-25 18:40:35.881 AsReaderDemo[8741:266346] -[AsReader setBarcodeStringListener:],called
+2015-09-25 18:40:35.881 AsReaderDemo[8741:266346] -[AsReader setRfidPcEpcStringListener:],called
+2015-09-25 18:40:35.881 AsReaderDemo[8741:266346] -[AsReader setRfidPcEpcDataListener:],called
+2015-09-25 18:40:35.881 AsReaderDemo[8741:266346] -[AsReader setBarcodePowerListener:],called
+2015-09-25 18:40:35.881 AsReaderDemo[8741:266346] -[AsReader setRfidPowerListener:],called
+2015-09-25 18:40:35.882 AsReaderDemo[8741:266346] Received Event: deviceready
+2015-09-25 18:40:36.880 AsReaderDemo[8741:266346] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-09-25 18:40:36.880 AsReaderDemo[8741:266346] getting a list of accessories
+2015-09-25 18:40:36.880 AsReaderDemo[8741:266346] Found 0 accessories
+2015-09-25 18:40:36.880 AsReaderDemo[8741:266346] looking for jp.co.asx.asreader.barcode
+2015-09-25 18:40:36.880 AsReaderDemo[8741:266346] Scanned the list of accessories
+2015-09-25 18:40:36.881 AsReaderDemo[8741:266346] getting a list of accessories
+2015-09-25 18:40:36.881 AsReaderDemo[8741:266346] Found 0 accessories
+2015-09-25 18:40:36.881 AsReaderDemo[8741:266346] looking for jp.co.asx.asreader.rfid
+2015-09-25 18:40:36.881 AsReaderDemo[8741:266346] Scanned the list of accessories
+2015-09-25 18:40:36.882 AsReaderDemo[8741:266346] getting a list of accessories
+2015-09-25 18:40:36.882 AsReaderDemo[8741:266346] Found 0 accessories
+2015-09-25 18:40:36.882 AsReaderDemo[8741:266346] looking for jp.co.asx.asreader.6dongle.barcode
+2015-09-25 18:40:36.882 AsReaderDemo[8741:266346] Scanned the list of accessories
+2015-09-25 18:40:36.882 AsReaderDemo[8741:266346] getting a list of accessories
+2015-09-25 18:40:36.883 AsReaderDemo[8741:266346] Found 0 accessories
+2015-09-25 18:40:36.883 AsReaderDemo[8741:266346] looking for jp.co.asx.asreader.6dongle.rfid
+2015-09-25 18:40:36.883 AsReaderDemo[8741:266346] Scanned the list of accessories
+2015-09-25 18:40:36.883 AsReaderDemo[8741:266346] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-09-25 18:40:36.883 AsReaderDemo[8741:266346] initWithProtocol
+2015-09-25 18:40:36.884 AsReaderDemo[8741:266346] isConnected = 0
+2015-09-25 18:40:36.884 AsReaderDemo[8741:266346] plugged = 0
+2015-09-25 18:40:36.884 AsReaderDemo[8741:266346] -[AsReader pluggedBarcode:],called
+2015-09-25 18:40:36.890 AsReaderDemo[8741:266346] isConnected = 0
+2015-09-25 18:40:36.891 AsReaderDemo[8741:266346] plugged = 0
+2015-09-25 18:40:36.891 AsReaderDemo[8741:266346] -[AsReader pluggedRfid:],called
+2015-09-25 18:40:36.891 AsReaderDemo[8741:266346] rfidPluggedListenerCallbackId:XO
