@@ -40,10 +40,10 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		BF8DFC1E21734F0099A0AE7B /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF5ADED14BF41BB9A6E9B61 /* CDVLogger.m */; };
-		27A15752C1874F0686CC9C5B /* AsReader.mm in Resources */ = {isa = PBXBuildFile; fileRef = FC80A9B109E541399E66ADD8 /* AsReader.mm */; };
-		30BCBB6721BF4F5CA1EB37F4 /* libAreteUart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D1894934D7477BA3CCD30C /* libAreteUart.a */; };
-		2DB7576345424C11AB74D438 /* PhyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E88EE51C32724E00AB9FCAB0 /* PhyUtility.m */; };
-		4A1F1C2093B54CB1AF946321 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F619E5EAA3498184039259 /* ExternalAccessory.framework */; };
+		588C547E15AA4333BD65511F /* AsReader.mm in Resources */ = {isa = PBXBuildFile; fileRef = 6D8647A900D34C429716CF2A /* AsReader.mm */; };
+		6C9C32E110794CBA99252737 /* libAreteUart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6142D2C01E4CB59600EF08 /* libAreteUart.a */; };
+		525B03454D4F4F2F8C4A6777 /* PhyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B41CF0EE43E948E1835E6161 /* PhyUtility.m */; };
+		DE59A5573C3C4D3196A04E67 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A122F6BE4A4834A330B024 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,15 +111,15 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "AsReaderDemo/config.xml"; sourceTree = "<group>"; };
 		9FF5ADED14BF41BB9A6E9B61 /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		36E69C4C051C4590BBDBE905 /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		FC80A9B109E541399E66ADD8 /* AsReader.mm */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "AsReader.mm"; path = "com.asreader.cdv/AsReader.mm"; sourceTree = "<group>"; fileEncoding = 4; };
-		14D1894934D7477BA3CCD30C /* libAreteUart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libAreteUart.a"; path = "AsReaderDemo/Plugins/com.asreader.cdv/libAreteUart.a"; sourceTree = "<group>"; fileEncoding = 4; };
-		E88EE51C32724E00AB9FCAB0 /* PhyUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PhyUtility.m"; path = "com.asreader.cdv/PhyUtility.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		2B1ED20A58034B4B8D35F855 /* Eas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Eas.h"; path = "com.asreader.cdv/Eas.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		55FC44A559F14AF58596B22B /* PhyUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PhyUtility.h"; path = "com.asreader.cdv/PhyUtility.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		DA45AD3B46184FE7A8433018 /* RcpBarcodeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RcpBarcodeApi.h"; path = "com.asreader.cdv/RcpBarcodeApi.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		3F9827C052D24FD9ACC2AE47 /* RcpRfidApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RcpRfidApi.h"; path = "com.asreader.cdv/RcpRfidApi.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		DBD994B666774E50BF5EDC71 /* UartMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UartMgr.h"; path = "com.asreader.cdv/UartMgr.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		43F619E5EAA3498184039259 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "ExternalAccessory.framework"; path = "System/Library/Frameworks/ExternalAccessory.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		6D8647A900D34C429716CF2A /* AsReader.mm */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "AsReader.mm"; path = "com.asreader.cdv/AsReader.mm"; sourceTree = "<group>"; fileEncoding = 4; };
+		5E6142D2C01E4CB59600EF08 /* libAreteUart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libAreteUart.a"; path = "AsReaderDemo/Plugins/com.asreader.cdv/libAreteUart.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		B41CF0EE43E948E1835E6161 /* PhyUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PhyUtility.m"; path = "com.asreader.cdv/PhyUtility.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		4A5CCB7400FD457D98468FB2 /* Eas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Eas.h"; path = "com.asreader.cdv/Eas.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		ED574649BE794BC5A379206D /* PhyUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PhyUtility.h"; path = "com.asreader.cdv/PhyUtility.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		419269F271AA4252ACED9D8E /* RcpBarcodeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RcpBarcodeApi.h"; path = "com.asreader.cdv/RcpBarcodeApi.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		26BD6C85241C42219790BE12 /* RcpRfidApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RcpRfidApi.h"; path = "com.asreader.cdv/RcpRfidApi.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		641DA79C321342C38512ACF9 /* UartMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UartMgr.h"; path = "com.asreader.cdv/UartMgr.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E5A122F6BE4A4834A330B024 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "ExternalAccessory.framework"; path = "System/Library/Frameworks/ExternalAccessory.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
-				30BCBB6721BF4F5CA1EB37F4 /* libAreteUart.a in Frameworks */,
-				4A1F1C2093B54CB1AF946321 /* ExternalAccessory.framework in Frameworks */,
+				6C9C32E110794CBA99252737 /* libAreteUart.a in Frameworks */,
+				DE59A5573C3C4D3196A04E67 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +205,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				14D1894934D7477BA3CCD30C /* libAreteUart.a */,
-				43F619E5EAA3498184039259 /* ExternalAccessory.framework */,
+				5E6142D2C01E4CB59600EF08 /* libAreteUart.a */,
+				E5A122F6BE4A4834A330B024 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,13 +224,13 @@
 			children = (
 				9FF5ADED14BF41BB9A6E9B61 /* CDVLogger.m */,
 				36E69C4C051C4590BBDBE905 /* CDVLogger.h */,
-				FC80A9B109E541399E66ADD8 /* AsReader.mm */,
-				E88EE51C32724E00AB9FCAB0 /* PhyUtility.m */,
-				2B1ED20A58034B4B8D35F855 /* Eas.h */,
-				55FC44A559F14AF58596B22B /* PhyUtility.h */,
-				DA45AD3B46184FE7A8433018 /* RcpBarcodeApi.h */,
-				3F9827C052D24FD9ACC2AE47 /* RcpRfidApi.h */,
-				DBD994B666774E50BF5EDC71 /* UartMgr.h */,
+				6D8647A900D34C429716CF2A /* AsReader.mm */,
+				B41CF0EE43E948E1835E6161 /* PhyUtility.m */,
+				4A5CCB7400FD457D98468FB2 /* Eas.h */,
+				ED574649BE794BC5A379206D /* PhyUtility.h */,
+				419269F271AA4252ACED9D8E /* RcpBarcodeApi.h */,
+				26BD6C85241C42219790BE12 /* RcpRfidApi.h */,
+				641DA79C321342C38512ACF9 /* UartMgr.h */,
 			);
 			name = Plugins;
 			path = "AsReaderDemo/Plugins";
@@ -416,8 +416,8 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				BF8DFC1E21734F0099A0AE7B /* CDVLogger.m in Sources */,
-				27A15752C1874F0686CC9C5B /* AsReader.mm in Resources */,
-				2DB7576345424C11AB74D438 /* PhyUtility.m in Sources */,
+				588C547E15AA4333BD65511F /* AsReader.mm in Resources */,
+				525B03454D4F4F2F8C4A6777 /* PhyUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

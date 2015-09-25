@@ -24,11 +24,11 @@
     <allow-intent href="itms-apps:*" />
     <name>AsReaderDemo</name>
     <description>
-        A sample Apache Cordova application for AsReader.
-    </description>
+		A sample Apache Cordova application for AsReader.
+	</description>
     <author email="bsetsu@asx.co.jp" href="http://asreader.com">
-        AsReader Team
-    </author>
+		AsReader Team
+	</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
