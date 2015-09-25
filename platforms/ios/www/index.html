@@ -35,9 +35,29 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello AsReader</title>
     </head>
-    <body>
+    <body ontouchstart="">
         <div class="app">
+			<img src="img/logo.png"/>
+			<div id="buttons">
+				<br>
+				BARCODE
+				<hr>
+				<button id="barcodePowerOn" type="button"> ON </button>
+				<button id="barcodePowerOff" type="button"> OFF </button>
+				<button id="readBarcode" type="button">READ</button>
+				<!-- <button id="readBarcodeContinuously" type="button">READ CONTINUOUSLY</button>-->
+				<button id="stopReadBarcode" type="button">STOP</button>
+				<br><br>
+				RFID
+				<hr>
+
+				<button id="rfidPowerOn" type="button"> ON </button>
+				<button id="rfidPowerOff" type="button"> OFF </button>
+				<button id="startReadTags" type="button">READ</button>
+				<button id="stopReadTags" type="button">STOP</button>
+			</div>
 			<textarea id="datareceived"></textarea>
+			<button id="clearall" type="button">CLEAR</button>
             <h1>Hello AsReader</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">App Launching</p>
