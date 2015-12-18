@@ -26,7 +26,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-console": "1.0.1",
-    "com.asreader.cdv": "0.0.1"
+    "com.asreader.cdv": "0.0.2"
 }
 // BOTTOM OF METADATA
 });

@@ -33,7 +33,26 @@ var app = {
 	//
 	// The scope of 'this' is the event. In order to call the 'receivedEvent'
 	// function, we must explicitly call 'app.receivedEvent(...);'
+	byte2Hex: function(bytes) {
+	  return bytes.map(function(byte) {
+	    return (byte & 0xFF).toString(16)
+	  }).join('')
+	},
+	ab2str: function(buf) {
+	  return String.fromCharCode.apply(null, new Uint16Array(buf));
+	},
+	str2ab: function(str) {
+	  var buf = new ArrayBuffer(str.length*2); // 2 bytes for each char
+	  var bufView = new Uint16Array(buf);
+	  for (var i=0, strLen=str.length; i<strLen; i++) {
+	    bufView[i] = str.charCodeAt(i);
+	  }
+	  return buf;
+	},
 	onDeviceReady: function() {
+		try{
+			
+		
 		app.receivedEvent('deviceready');
 		var rfidsuccess = function(message) {
 			document.getElementById("deviceready").querySelector('.asr_rf_poweron').setAttribute('style', 'display:block;');
@@ -54,6 +73,26 @@ var app = {
 			document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+barcode;
 		}
 
+		var memoryReceived = function(memory){
+			try{
+				alert(memory);
+				//alert(pcEpcData.byteLength);
+				var dataView= new DataView(memory);
+				var str = "";
+				for(i = 0; i<memory.byteLength;i++){
+					//alert (i);
+					str += dataView.getUint8(i).toString(16).toUpperCase();
+				}
+				//alert(str);
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\nMEMODataHex:"+str;
+			}catch(err){
+				alert(err.message);
+			}
+			
+		}
+		var memoryReceivedErr = function(){
+			alert("memoryReceivedErr");
+		}
 		var barcodeReaderPlugged = function(status){
 			//alert(status);
 			if(status == 'YES'){
@@ -80,6 +119,43 @@ var app = {
 			document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+pcEpcString;
 		}
 		var rfidPcEpcDataReceived = function(pcEpcData){
+			
+			try{
+				
+				//alert(pcEpcData.byteLength);
+				var dataView= new DataView(pcEpcData);
+				var str = "";
+				for(i = 0; i<pcEpcData.byteLength;i++){
+					//alert (i);
+					str += "Ox"+dataView.getUint8(i).toString(16).toUpperCase();
+				}
+				//alert(str);
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\nDataHex:"+str;
+			}catch(err){
+				alert(err.message);
+			}
+			
+			//alert(String.fromCharCode.apply(null, new Uint16Array(pcEpcData)));
+			//document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+pcEpcString;
+		}
+
+		var rfidEpcDataReceived = function(epcData){
+			
+			try{
+				asreader.readTagMemoryNotifyTo(0x00000000,epcData,0x01,0x00,8,memoryReceived,memoryReceivedErr);
+				//alert(pcEpcData.byteLength);
+				var dataView= new DataView(epcData);
+				var str = "";
+				for(i = 0; i<epcData.byteLength;i++){
+					//alert (i);
+					str += dataView.getUint8(i).toString(16).toUpperCase();
+				}
+				//alert(str);
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\nEPCDataHex:"+str;
+			}catch(err){
+				alert(err.message);
+			}
+			
 			//alert(String.fromCharCode.apply(null, new Uint16Array(pcEpcData)));
 			//document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+pcEpcString;
 		}
@@ -104,6 +180,10 @@ var app = {
 				document.getElementById("deviceready").querySelector('.asr_rf_poweron').setAttribute('style', 'display:none;');
 			}
 		}
+		
+		var rfidPcEpcDataWithRssiReceived = function(dic){
+			alert("PcEpc:" + dic["PcEpc"]+" Rssi:" + dic["Rssi"]);
+		}
 		//asreader.powerOn("ON", success, failure);
 		asreader.setBarcodePluggedListener(barcodeReaderPlugged);
 		asreader.setRfidPluggedListener(rfidReaderPlugged);
@@ -111,9 +191,13 @@ var app = {
 		asreader.setRfidPcEpcStringListener(rfidPcEpcStringReceived);
 
 		asreader.setRfidPcEpcDataListener(rfidPcEpcDataReceived);
+		asreader.setRfidEpcDataListener(rfidEpcDataReceived);
+		
+		asreader.setRfidPcEpcStringWithRssiListener(rfidPcEpcDataWithRssiReceived);
 
 		asreader.setBarcodePowerListener(barcodePowerListener);
 		asreader.setRfidPowerListener(rfidPowerListener);
+		
 		
 		document.getElementById("barcodePowerOn").addEventListener('click',function(){asreader.barcodePowerOn(null,null);});
 		document.getElementById("barcodePowerOff").addEventListener('click',function(){asreader.barcodePowerOff(null,null);});
@@ -124,11 +208,17 @@ var app = {
 		document.getElementById("rfidPowerOn").addEventListener('click',function(){asreader.rfidPowerOn(null,null);});
 		document.getElementById("rfidPowerOff").addEventListener('click',function(){asreader.rfidPowerOff(null,null);});
 		document.getElementById("startReadTags").addEventListener('click',function(){asreader.startReadTags(null,null);});
+
+		document.getElementById("startReadTagsWithParams").addEventListener('click',function(){asreader.startReadTagsWithParams(null,null,0,0,0);});
+		document.getElementById("startReadTagsAndRssiWithParams").addEventListener('click',function(){asreader.startReadTagsAndRssiWithParams(null,null,0,0,0);});
+		
 		document.getElementById("stopReadTags").addEventListener('click',function(){asreader.stopReadTags(null,null);});
 		
 
 		document.getElementById("clearall").addEventListener('click',function(){document.getElementById("datareceived").value = '';});
-		
+		}catch(err){
+			alert(err.message);
+		}
 	},
 	// Update DOM on a Received Event
 	receivedEvent: function(id) {

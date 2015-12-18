@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D4EBD398-AB03-43FB-9979-78671DD7CF96</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AsReaderDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1207392B13A11DCE88D8264DF07084357D58EC72</key>
+		<string>https://github.com/asx-co-jp/cordova-plugin-asreader-demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/AsReaderDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1207392B13A11DCE88D8264DF07084357D58EC72</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/asx-co-jp/cordova-plugin-asreader-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1207392B13A11DCE88D8264DF07084357D58EC72</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1207392B13A11DCE88D8264DF07084357D58EC72</string>
+			<key>IDESourceControlWCCName</key>
+			<string>asreaderdemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

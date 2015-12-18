@@ -46,7 +46,7 @@
             "PACKAGE_NAME": "com.asreader.demo"
         },
         "com.asreader.cdv": {
-            "PACKAGE_NAME": "com.asreader.demo"
+            "PACKAGE_NAME": "com.asreader.cdvdemo"
         }
     },
     "dependent_plugins": {}

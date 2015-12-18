@@ -2728,3 +2728,421 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-09-25 22:07:35.351 AsReaderDemo[9957:328810] plugged = 0
 2015-09-25 22:07:35.351 AsReaderDemo[9957:328810] -[AsReader pluggedRfid:],called
 2015-09-25 22:07:35.351 AsReaderDemo[9957:328810] rfidPluggedListenerCallbackId:XcU
+2015-09-25 22:39:22.114 AsReaderDemo[10131:342608] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Data/Application/411A800D-5996-4676-A9AF-8F274BD08F86/Library/Cookies/Cookies.binarycookies
+2015-09-25 22:39:22.624 AsReaderDemo[10131:342608] Apache Cordova native platform version 3.9.1 is starting.
+2015-09-25 22:39:22.625 AsReaderDemo[10131:342608] Multi-tasking -> Device: YES, App: YES
+2015-09-25 22:39:22.646 AsReaderDemo[10131:342608] Unlimited access to network resources
+2015-09-25 22:39:22.658 AsReaderDemo[10131:342608] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-25 22:39:23.628 AsReaderDemo[10131:342608] Resetting plugins due to page load.
+2015-09-25 22:39:23.838 AsReaderDemo[10131:342608] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Bundle/Application/1108D1B2-3F75-4501-8E1E-0EC0162FEA84/AsReaderDemo.app/www/index.html
+2015-09-25 22:39:23.932 AsReaderDemo[10131:342608] -[AsReader pluginInitialize],called
+2015-09-25 22:39:23.933 AsReaderDemo[10131:342608] -[AsReader barcodeRcp],called
+2015-09-25 22:39:23.935 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:23.935 AsReaderDemo[10131:342608] -[AsReader setBarcodePluggedListener:],called
+2015-09-25 22:39:23.939 AsReaderDemo[10131:342608] -[AsReader setRfidPluggedListener:],called
+2015-09-25 22:39:23.940 AsReaderDemo[10131:342608] -[AsReader setBarcodeStringListener:],called
+2015-09-25 22:39:23.940 AsReaderDemo[10131:342608] -[AsReader setRfidPcEpcStringListener:],called
+2015-09-25 22:39:23.941 AsReaderDemo[10131:342608] -[AsReader setRfidPcEpcDataListener:],called
+2015-09-25 22:39:23.941 AsReaderDemo[10131:342608] -[AsReader setBarcodePowerListener:],called
+2015-09-25 22:39:23.941 AsReaderDemo[10131:342608] -[AsReader setRfidPowerListener:],called
+2015-09-25 22:39:23.941 AsReaderDemo[10131:342608] Received Event: deviceready
+2015-09-25 22:39:24.939 AsReaderDemo[10131:342608] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-09-25 22:39:24.939 AsReaderDemo[10131:342608] getting a list of accessories
+2015-09-25 22:39:24.939 AsReaderDemo[10131:342608] Found 0 accessories
+2015-09-25 22:39:24.940 AsReaderDemo[10131:342608] looking for jp.co.asx.asreader.barcode
+2015-09-25 22:39:24.940 AsReaderDemo[10131:342608] Scanned the list of accessories
+2015-09-25 22:39:24.940 AsReaderDemo[10131:342608] getting a list of accessories
+2015-09-25 22:39:24.940 AsReaderDemo[10131:342608] Found 0 accessories
+2015-09-25 22:39:24.940 AsReaderDemo[10131:342608] looking for jp.co.asx.asreader.rfid
+2015-09-25 22:39:24.940 AsReaderDemo[10131:342608] Scanned the list of accessories
+2015-09-25 22:39:24.941 AsReaderDemo[10131:342608] getting a list of accessories
+2015-09-25 22:39:24.941 AsReaderDemo[10131:342608] Found 0 accessories
+2015-09-25 22:39:24.941 AsReaderDemo[10131:342608] looking for jp.co.asx.asreader.6dongle.barcode
+2015-09-25 22:39:24.941 AsReaderDemo[10131:342608] Scanned the list of accessories
+2015-09-25 22:39:24.941 AsReaderDemo[10131:342608] getting a list of accessories
+2015-09-25 22:39:24.942 AsReaderDemo[10131:342608] Found 0 accessories
+2015-09-25 22:39:24.942 AsReaderDemo[10131:342608] looking for jp.co.asx.asreader.6dongle.rfid
+2015-09-25 22:39:24.942 AsReaderDemo[10131:342608] Scanned the list of accessories
+2015-09-25 22:39:24.942 AsReaderDemo[10131:342608] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-09-25 22:39:24.942 AsReaderDemo[10131:342608] initWithProtocol
+2015-09-25 22:39:24.943 AsReaderDemo[10131:342608] isConnected = 0
+2015-09-25 22:39:24.943 AsReaderDemo[10131:342608] plugged = 0
+2015-09-25 22:39:24.943 AsReaderDemo[10131:342608] -[AsReader pluggedBarcode:],called
+2015-09-25 22:39:24.949 AsReaderDemo[10131:342608] isConnected = 0
+2015-09-25 22:39:24.949 AsReaderDemo[10131:342608] plugged = 0
+2015-09-25 22:39:24.949 AsReaderDemo[10131:342608] -[AsReader pluggedRfid:],called
+2015-09-25 22:39:24.949 AsReaderDemo[10131:342608] _rfidPluggedListenerCallbackId:XÛN
+2015-09-25 22:39:39.355 AsReaderDemo[10131:342608] -[AsReader rfidPowerOn:],called
+2015-09-25 22:39:39.355 AsReaderDemo[10131:342608] -[AsReader rfidPowerOn],called
+2015-09-25 22:39:39.356 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:39.356 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:39.356 AsReaderDemo[10131:342608] send before [TX] <bb000100 01ff7e0f d7>
+2015-09-25 22:39:39.357 AsReaderDemo[10131:342608] isConnected = 0
+2015-09-25 22:39:39.357 AsReaderDemo[10131:342608] plugged = 0
+2015-09-25 22:39:39.357 AsReaderDemo[10131:342608] [TX] <bb000100 01ff7e0f d7>
+2015-09-25 22:39:45.241 AsReaderDemo[10131:342608] -[AsReader rfidPowerOff:],called
+2015-09-25 22:39:45.241 AsReaderDemo[10131:342608] -[AsReader rfidPowerOff],called
+2015-09-25 22:39:45.242 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:45.242 AsReaderDemo[10131:342608] send before [TX] <bb000100 01007e0c 28>
+2015-09-25 22:39:45.242 AsReaderDemo[10131:342608] isConnected = 0
+2015-09-25 22:39:45.243 AsReaderDemo[10131:342608] plugged = 0
+2015-09-25 22:39:45.243 AsReaderDemo[10131:342608] [TX] <bb000100 01007e0c 28>
+2015-09-25 22:39:45.243 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:51.707 AsReaderDemo[10131:342608] -[AsReader rfidPowerOn:],called
+2015-09-25 22:39:51.707 AsReaderDemo[10131:342608] -[AsReader rfidPowerOn],called
+2015-09-25 22:39:51.708 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:51.708 AsReaderDemo[10131:342608] -[AsReader rfidRcp],called
+2015-09-25 22:39:51.708 AsReaderDemo[10131:342608] send before [TX] <bb000100 01ff7e0f d7>
+2015-09-25 22:39:51.708 AsReaderDemo[10131:342608] isConnected = 0
+2015-09-25 22:39:51.709 AsReaderDemo[10131:342608] plugged = 0
+2015-09-25 22:39:51.709 AsReaderDemo[10131:342608] [TX] <bb000100 01ff7e0f d7>
+2015-09-25 22:40:28.123 AsReaderDemo[10131:342608] -[AsReader barcodePowerOn:],called
+2015-09-25 22:40:28.124 AsReaderDemo[10131:342608] -[AsReader barcodePowerOn],called
+2015-09-25 22:40:28.124 AsReaderDemo[10131:342608] -[AsReader barcodeRcp],called
+2015-09-25 22:40:28.125 AsReaderDemo[10131:342608] -[AsReader barcodeRcp],called
+2015-09-25 22:40:28.125 AsReaderDemo[10131:342608] send before [TX] <bb000100 01ff7e0f d7>
+2015-09-25 22:40:28.125 AsReaderDemo[10131:342608] isConnected = 0
+2015-09-25 22:40:28.125 AsReaderDemo[10131:342608] plugged = 0
+2015-09-25 22:40:28.126 AsReaderDemo[10131:342608] [TX] <bb000100 01ff7e0f d7>
+2015-10-22 16:35:52.158 AsReaderDemo[1471:136471] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Data/Application/3F1A0A63-2936-41B2-BCB6-74DF7697A14A/Library/Cookies/Cookies.binarycookies
+2015-10-22 16:35:52.426 AsReaderDemo[1471:136471] Apache Cordova native platform version 3.9.1 is starting.
+2015-10-22 16:35:52.427 AsReaderDemo[1471:136471] Multi-tasking -> Device: YES, App: YES
+2015-10-22 16:35:52.438 AsReaderDemo[1471:136471] Unlimited access to network resources
+2015-10-22 16:35:52.447 AsReaderDemo[1471:136471] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-10-22 16:35:53.173 AsReaderDemo[1471:136471] Resetting plugins due to page load.
+2015-10-22 16:35:53.317 AsReaderDemo[1471:136471] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Bundle/Application/3D3D2A48-3332-4154-95B2-4D86DF4933FB/AsReaderDemo.app/www/index.html
+2015-10-22 16:35:53.383 AsReaderDemo[1471:136471] -[AsReader pluginInitialize],called
+2015-10-22 16:35:53.383 AsReaderDemo[1471:136471] -[AsReader barcodeRcp],called
+2015-10-22 16:35:53.383 AsReaderDemo[1471:136471] -[AsReader rfidRcp],called
+2015-10-22 16:35:53.383 AsReaderDemo[1471:136471] -[AsReader setBarcodePluggedListener:],called
+2015-10-22 16:35:53.388 AsReaderDemo[1471:136471] -[AsReader setRfidPluggedListener:],called
+2015-10-22 16:35:53.388 AsReaderDemo[1471:136471] -[AsReader setBarcodeStringListener:],called
+2015-10-22 16:35:53.388 AsReaderDemo[1471:136471] -[AsReader setRfidPcEpcStringListener:],called
+2015-10-22 16:35:53.388 AsReaderDemo[1471:136471] -[AsReader setRfidPcEpcDataListener:],called
+2015-10-22 16:35:53.388 AsReaderDemo[1471:136471] -[AsReader setBarcodePowerListener:],called
+2015-10-22 16:35:53.389 AsReaderDemo[1471:136471] -[AsReader setRfidPowerListener:],called
+2015-10-22 16:35:53.389 AsReaderDemo[1471:136471] Received Event: deviceready
+2015-10-22 16:35:54.389 AsReaderDemo[1471:136471] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-10-22 16:35:54.389 AsReaderDemo[1471:136471] getting a list of accessories
+2015-10-22 16:35:54.390 AsReaderDemo[1471:136471] Found 0 accessories
+2015-10-22 16:35:54.390 AsReaderDemo[1471:136471] looking for jp.co.asx.asreader.barcode
+2015-10-22 16:35:54.390 AsReaderDemo[1471:136471] Scanned the list of accessories
+2015-10-22 16:35:54.390 AsReaderDemo[1471:136471] getting a list of accessories
+2015-10-22 16:35:54.390 AsReaderDemo[1471:136471] Found 0 accessories
+2015-10-22 16:35:54.391 AsReaderDemo[1471:136471] looking for jp.co.asx.asreader.rfid
+2015-10-22 16:35:54.391 AsReaderDemo[1471:136471] Scanned the list of accessories
+2015-10-22 16:35:54.391 AsReaderDemo[1471:136471] getting a list of accessories
+2015-10-22 16:35:54.391 AsReaderDemo[1471:136471] Found 0 accessories
+2015-10-22 16:35:54.392 AsReaderDemo[1471:136471] looking for jp.co.asx.asreader.6dongle.barcode
+2015-10-22 16:35:54.392 AsReaderDemo[1471:136471] Scanned the list of accessories
+2015-10-22 16:35:54.392 AsReaderDemo[1471:136471] getting a list of accessories
+2015-10-22 16:35:54.392 AsReaderDemo[1471:136471] Found 0 accessories
+2015-10-22 16:35:54.393 AsReaderDemo[1471:136471] looking for jp.co.asx.asreader.6dongle.rfid
+2015-10-22 16:35:54.393 AsReaderDemo[1471:136471] Scanned the list of accessories
+2015-10-22 16:35:54.393 AsReaderDemo[1471:136471] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-10-22 16:35:54.393 AsReaderDemo[1471:136471] initWithProtocol
+2015-10-22 16:35:54.393 AsReaderDemo[1471:136471] isConnected = 0
+2015-10-22 16:35:54.394 AsReaderDemo[1471:136471] plugged = 0
+2015-10-22 16:35:54.394 AsReaderDemo[1471:136471] -[AsReader pluggedBarcode:],called
+2015-10-22 16:35:54.394 AsReaderDemo[1471:136471] isConnected = 0
+2015-10-22 16:35:54.395 AsReaderDemo[1471:136471] plugged = 0
+2015-10-22 16:35:54.395 AsReaderDemo[1471:136471] -[AsReader pluggedRfid:],called
+2015-10-22 16:35:54.395 AsReaderDemo[1471:136471] _rfidPluggedListenerCallbackId:X#R
+2015-10-23 00:34:50.616 AsReaderCDV[1996:88569] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Data/Application/32F6DE0C-C5B6-471F-9C76-1BD4F66287D2/Library/Cookies/Cookies.binarycookies
+2015-10-23 00:34:50.966 AsReaderCDV[1996:88569] Apache Cordova native platform version 3.9.1 is starting.
+2015-10-23 00:34:50.967 AsReaderCDV[1996:88569] Multi-tasking -> Device: YES, App: YES
+2015-10-23 00:34:50.983 AsReaderCDV[1996:88569] Unlimited access to network resources
+2015-10-23 00:34:50.995 AsReaderCDV[1996:88569] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-10-23 00:34:52.656 AsReaderCDV[1996:88569] Resetting plugins due to page load.
+2015-10-23 00:34:52.827 AsReaderCDV[1996:88569] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Bundle/Application/FDED8BFB-822C-46E9-B8AC-B6CF98B64786/AsReaderCDV.app/www/index.html
+2015-10-23 00:34:52.916 AsReaderCDV[1996:88569] -[AsReader pluginInitialize],called
+2015-10-23 00:34:52.917 AsReaderCDV[1996:88569] -[AsReader barcodeRcp],called
+2015-10-23 00:34:52.919 AsReaderCDV[1996:88569] -[AsReader rfidRcp],called
+2015-10-23 00:34:52.920 AsReaderCDV[1996:88569] -[AsReader setBarcodePluggedListener:],called
+2015-10-23 00:34:52.925 AsReaderCDV[1996:88569] -[AsReader setRfidPluggedListener:],called
+2015-10-23 00:34:52.926 AsReaderCDV[1996:88569] -[AsReader setBarcodeStringListener:],called
+2015-10-23 00:34:52.926 AsReaderCDV[1996:88569] -[AsReader setRfidPcEpcStringListener:],called
+2015-10-23 00:34:52.926 AsReaderCDV[1996:88569] -[AsReader setRfidPcEpcDataListener:],called
+2015-10-23 00:34:52.927 AsReaderCDV[1996:88569] -[AsReader setBarcodePowerListener:],called
+2015-10-23 00:34:52.927 AsReaderCDV[1996:88569] -[AsReader setRfidPowerListener:],called
+2015-10-23 00:34:52.927 AsReaderCDV[1996:88569] Received Event: deviceready
+2015-10-23 00:34:53.926 AsReaderCDV[1996:88569] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-10-23 00:34:53.926 AsReaderCDV[1996:88569] getting a list of accessories
+2015-10-23 00:34:53.926 AsReaderCDV[1996:88569] Found 0 accessories
+2015-10-23 00:34:53.927 AsReaderCDV[1996:88569] looking for jp.co.asx.asreader.barcode
+2015-10-23 00:34:53.927 AsReaderCDV[1996:88569] Scanned the list of accessories
+2015-10-23 00:34:53.927 AsReaderCDV[1996:88569] getting a list of accessories
+2015-10-23 00:34:53.927 AsReaderCDV[1996:88569] Found 0 accessories
+2015-10-23 00:34:53.927 AsReaderCDV[1996:88569] looking for jp.co.asx.asreader.rfid
+2015-10-23 00:34:53.928 AsReaderCDV[1996:88569] Scanned the list of accessories
+2015-10-23 00:34:53.928 AsReaderCDV[1996:88569] getting a list of accessories
+2015-10-23 00:34:53.928 AsReaderCDV[1996:88569] Found 0 accessories
+2015-10-23 00:34:53.928 AsReaderCDV[1996:88569] looking for jp.co.asx.asreader.6dongle.barcode
+2015-10-23 00:34:53.928 AsReaderCDV[1996:88569] Scanned the list of accessories
+2015-10-23 00:34:53.929 AsReaderCDV[1996:88569] getting a list of accessories
+2015-10-23 00:34:53.929 AsReaderCDV[1996:88569] Found 0 accessories
+2015-10-23 00:34:53.929 AsReaderCDV[1996:88569] looking for jp.co.asx.asreader.6dongle.rfid
+2015-10-23 00:34:53.929 AsReaderCDV[1996:88569] Scanned the list of accessories
+2015-10-23 00:34:53.929 AsReaderCDV[1996:88569] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-10-23 00:34:53.929 AsReaderCDV[1996:88569] initWithProtocol
+2015-10-23 00:34:53.930 AsReaderCDV[1996:88569] isConnected = 0
+2015-10-23 00:34:53.930 AsReaderCDV[1996:88569] plugged = 0
+2015-10-23 00:34:53.930 AsReaderCDV[1996:88569] -[AsReader pluggedBarcode:],called
+2015-10-23 00:34:53.935 AsReaderCDV[1996:88569] isConnected = 0
+2015-10-23 00:34:53.935 AsReaderCDV[1996:88569] plugged = 0
+2015-10-23 00:34:53.935 AsReaderCDV[1996:88569] -[AsReader pluggedRfid:],called
+2015-10-23 00:34:53.935 AsReaderCDV[1996:88569] _rfidPluggedListenerCallbackId:AsReader1847360324
+2015-11-04 19:06:08.801 AsReaderCDV[2108:160254] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Data/Application/D8045D73-81AC-4DAD-8C22-AA72F70D992C/Library/Cookies/Cookies.binarycookies
+2015-11-04 19:06:09.140 AsReaderCDV[2108:160254] Apache Cordova native platform version 3.9.1 is starting.
+2015-11-04 19:06:09.141 AsReaderCDV[2108:160254] Multi-tasking -> Device: YES, App: YES
+2015-11-04 19:06:09.163 AsReaderCDV[2108:160254] Unlimited access to network resources
+2015-11-04 19:06:09.177 AsReaderCDV[2108:160254] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-11-04 19:06:10.083 AsReaderCDV[2108:160254] Resetting plugins due to page load.
+2015-11-04 19:06:10.272 AsReaderCDV[2108:160254] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/D9A348F1-0628-4181-AC51-8B30C0B4974E/data/Containers/Bundle/Application/C7CF71F3-E7A6-4069-968E-9682BB51AF2C/AsReaderCDV.app/www/index.html
+2015-11-04 19:06:10.358 AsReaderCDV[2108:160254] -[AsReader pluginInitialize],called
+2015-11-04 19:06:10.358 AsReaderCDV[2108:160254] -[AsReader barcodeRcp],called
+2015-11-04 19:06:10.359 AsReaderCDV[2108:160254] -[AsReader rfidRcp],called
+2015-11-04 19:06:10.360 AsReaderCDV[2108:160254] -[AsReader setBarcodePluggedListener:],called
+2015-11-04 19:06:10.365 AsReaderCDV[2108:160254] -[AsReader setRfidPluggedListener:],called
+2015-11-04 19:06:10.366 AsReaderCDV[2108:160254] -[AsReader setBarcodeStringListener:],called
+2015-11-04 19:06:10.366 AsReaderCDV[2108:160254] -[AsReader setRfidPcEpcStringListener:],called
+2015-11-04 19:06:10.366 AsReaderCDV[2108:160254] -[AsReader setRfidPcEpcDataListener:],called
+2015-11-04 19:06:10.366 AsReaderCDV[2108:160254] -[AsReader setBarcodePowerListener:],called
+2015-11-04 19:06:10.367 AsReaderCDV[2108:160254] -[AsReader setRfidPowerListener:],called
+2015-11-04 19:06:10.367 AsReaderCDV[2108:160254] Received Event: deviceready
+2015-11-04 19:06:11.366 AsReaderCDV[2108:160254] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-11-04 19:06:11.366 AsReaderCDV[2108:160254] getting a list of accessories
+2015-11-04 19:06:11.366 AsReaderCDV[2108:160254] Found 0 accessories
+2015-11-04 19:06:11.367 AsReaderCDV[2108:160254] looking for jp.co.asx.asreader.barcode
+2015-11-04 19:06:11.367 AsReaderCDV[2108:160254] Scanned the list of accessories
+2015-11-04 19:06:11.367 AsReaderCDV[2108:160254] getting a list of accessories
+2015-11-04 19:06:11.367 AsReaderCDV[2108:160254] Found 0 accessories
+2015-11-04 19:06:11.367 AsReaderCDV[2108:160254] looking for jp.co.asx.asreader.rfid
+2015-11-04 19:06:11.368 AsReaderCDV[2108:160254] Scanned the list of accessories
+2015-11-04 19:06:11.368 AsReaderCDV[2108:160254] getting a list of accessories
+2015-11-04 19:06:11.368 AsReaderCDV[2108:160254] Found 0 accessories
+2015-11-04 19:06:11.368 AsReaderCDV[2108:160254] looking for jp.co.asx.asreader.6dongle.barcode
+2015-11-04 19:06:11.368 AsReaderCDV[2108:160254] Scanned the list of accessories
+2015-11-04 19:06:11.368 AsReaderCDV[2108:160254] getting a list of accessories
+2015-11-04 19:06:11.369 AsReaderCDV[2108:160254] Found 0 accessories
+2015-11-04 19:06:11.369 AsReaderCDV[2108:160254] looking for jp.co.asx.asreader.6dongle.rfid
+2015-11-04 19:06:11.369 AsReaderCDV[2108:160254] Scanned the list of accessories
+2015-11-04 19:06:11.369 AsReaderCDV[2108:160254] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-11-04 19:06:11.369 AsReaderCDV[2108:160254] initWithProtocol
+2015-11-04 19:06:11.370 AsReaderCDV[2108:160254] isConnected = 0
+2015-11-04 19:06:11.370 AsReaderCDV[2108:160254] plugged = 0
+2015-11-04 19:06:11.370 AsReaderCDV[2108:160254] -[AsReader pluggedBarcode:],called
+2015-11-04 19:06:11.370 AsReaderCDV[2108:160254] isConnected = 0
+2015-11-04 19:06:11.371 AsReaderCDV[2108:160254] plugged = 0
+2015-11-04 19:06:11.371 AsReaderCDV[2108:160254] -[AsReader pluggedRfid:],called
+2015-11-04 19:06:11.371 AsReaderCDV[2108:160254] _rfidPluggedListenerCallbackId:AsReader684796010
+2015-12-15 19:24:56.392 AsReaderCDV[4167:339864] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Data/Application/5A0CD9EF-D0CA-41A5-B53F-9CF53621B116/Library/Cookies/com.asreader.cdvdemo.binarycookies
+2015-12-15 19:24:57.202 AsReaderCDV[4167:339864] Apache Cordova native platform version 3.9.1 is starting.
+2015-12-15 19:24:57.203 AsReaderCDV[4167:339864] Multi-tasking -> Device: YES, App: YES
+2015-12-15 19:24:57.232 AsReaderCDV[4167:339864] Unlimited access to network resources
+2015-12-15 19:24:57.249 AsReaderCDV[4167:339864] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-12-15 19:24:58.523 AsReaderCDV[4167:339864] Resetting plugins due to page load.
+2015-12-15 19:24:59.221 AsReaderCDV[4167:339864] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Bundle/Application/DA30466D-E6BB-4A8C-9D4C-4093BD8B769E/AsReaderCDV.app/www/index.html
+2015-12-15 19:24:59.272 AsReaderCDV[4167:339864] -[AsReader pluginInitialize],called
+2015-12-15 19:24:59.273 AsReaderCDV[4167:339864] -[AsReader barcodeRcp],called
+2015-12-15 19:24:59.277 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:24:59.278 AsReaderCDV[4167:339864] -[AsReader setBarcodePluggedListener:],called
+2015-12-15 19:24:59.292 AsReaderCDV[4167:339864] -[AsReader setRfidPluggedListener:],called
+2015-12-15 19:24:59.292 AsReaderCDV[4167:339864] -[AsReader setBarcodeStringListener:],called
+2015-12-15 19:24:59.292 AsReaderCDV[4167:339864] -[AsReader setRfidPcEpcStringListener:],called
+2015-12-15 19:24:59.292 AsReaderCDV[4167:339864] -[AsReader setRfidPcEpcDataListener:],called
+2015-12-15 19:24:59.292 AsReaderCDV[4167:339864] -[AsReader setRfidEpcDataListener:],called
+2015-12-15 19:24:59.293 AsReaderCDV[4167:339864] -[AsReader setBarcodePowerListener:],called
+2015-12-15 19:24:59.293 AsReaderCDV[4167:339864] -[AsReader setRfidPowerListener:],called
+2015-12-15 19:24:59.293 AsReaderCDV[4167:339864] Received Event: deviceready
+2015-12-15 19:25:00.285 AsReaderCDV[4167:339864] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-12-15 19:25:00.286 AsReaderCDV[4167:339864] getting a list of accessories
+2015-12-15 19:25:00.286 AsReaderCDV[4167:339864] Found 0 accessories
+2015-12-15 19:25:00.286 AsReaderCDV[4167:339864] looking for jp.co.asx.asreader.barcode
+2015-12-15 19:25:00.287 AsReaderCDV[4167:339864] Scanned the list of accessories
+2015-12-15 19:25:00.287 AsReaderCDV[4167:339864] getting a list of accessories
+2015-12-15 19:25:00.287 AsReaderCDV[4167:339864] Found 0 accessories
+2015-12-15 19:25:00.288 AsReaderCDV[4167:339864] looking for jp.co.asx.asreader.rfid
+2015-12-15 19:25:00.288 AsReaderCDV[4167:339864] Scanned the list of accessories
+2015-12-15 19:25:00.288 AsReaderCDV[4167:339864] getting a list of accessories
+2015-12-15 19:25:00.289 AsReaderCDV[4167:339864] Found 0 accessories
+2015-12-15 19:25:00.289 AsReaderCDV[4167:339864] looking for jp.co.asx.asreader.6dongle.barcode
+2015-12-15 19:25:00.289 AsReaderCDV[4167:339864] Scanned the list of accessories
+2015-12-15 19:25:00.289 AsReaderCDV[4167:339864] getting a list of accessories
+2015-12-15 19:25:00.289 AsReaderCDV[4167:339864] Found 0 accessories
+2015-12-15 19:25:00.289 AsReaderCDV[4167:339864] looking for jp.co.asx.asreader.6dongle.rfid
+2015-12-15 19:25:00.290 AsReaderCDV[4167:339864] Scanned the list of accessories
+2015-12-15 19:25:00.290 AsReaderCDV[4167:339864] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-12-15 19:25:00.291 AsReaderCDV[4167:339864] initWithProtocol
+2015-12-15 19:25:00.292 AsReaderCDV[4167:339864] isConnected = 0
+2015-12-15 19:25:00.292 AsReaderCDV[4167:339864] plugged = 0
+2015-12-15 19:25:00.292 AsReaderCDV[4167:339864] -[AsReader pluggedBarcode:],called
+2015-12-15 19:25:00.296 AsReaderCDV[4167:339864] isConnected = 0
+2015-12-15 19:25:00.296 AsReaderCDV[4167:339864] plugged = 0
+2015-12-15 19:25:00.297 AsReaderCDV[4167:339864] -[AsReader pluggedRfid:],called
+2015-12-15 19:25:00.297 AsReaderCDV[4167:339864] _rfidPluggedListenerCallbackId:AsReader1082587206
+2015-12-15 19:25:30.787 AsReaderCDV[4167:339864] -[AsReader rfidPowerOff:],called
+2015-12-15 19:25:30.789 AsReaderCDV[4167:339864] -[AsReader rfidPowerOff],called
+2015-12-15 19:25:30.789 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:25:30.791 AsReaderCDV[4167:339864] send before [TX] <bb000100 01007e0c 28>
+2015-12-15 19:25:30.791 AsReaderCDV[4167:339864] isConnected = 0
+2015-12-15 19:25:30.791 AsReaderCDV[4167:339864] plugged = 0
+2015-12-15 19:25:30.792 AsReaderCDV[4167:339864] [TX] <bb000100 01007e0c 28>
+2015-12-15 19:25:30.792 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:26:09.667 AsReaderCDV[4167:339864] -[AsReader rfidPowerOff:],called
+2015-12-15 19:26:09.670 AsReaderCDV[4167:339864] -[AsReader rfidPowerOff],called
+2015-12-15 19:26:09.670 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:26:09.674 AsReaderCDV[4167:339864] send before [TX] <bb000100 01007e0c 28>
+2015-12-15 19:26:09.674 AsReaderCDV[4167:339864] isConnected = 0
+2015-12-15 19:26:09.674 AsReaderCDV[4167:339864] plugged = 0
+2015-12-15 19:26:09.674 AsReaderCDV[4167:339864] [TX] <bb000100 01007e0c 28>
+2015-12-15 19:26:09.675 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:26:11.527 AsReaderCDV[4167:339864] -[AsReader rfidPowerOn:],called
+2015-12-15 19:26:11.528 AsReaderCDV[4167:339864] -[AsReader rfidPowerOn],called
+2015-12-15 19:26:11.528 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:26:11.528 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:26:11.528 AsReaderCDV[4167:339864] send before [TX] <bb000100 01ff7e0f d7>
+2015-12-15 19:26:11.529 AsReaderCDV[4167:339864] isConnected = 0
+2015-12-15 19:26:11.529 AsReaderCDV[4167:339864] plugged = 0
+2015-12-15 19:26:11.529 AsReaderCDV[4167:339864] [TX] <bb000100 01ff7e0f d7>
+2015-12-15 19:27:38.014 AsReaderCDV[4167:339864] -[AsReader startReadTags:],called
+2015-12-15 19:27:38.014 AsReaderCDV[4167:339864] -[AsReader startReadTags:mtime:repeatCycle:],called
+2015-12-15 19:27:38.014 AsReaderCDV[4167:339864] -[AsReader rfidRcp],called
+2015-12-15 19:27:38.016 AsReaderCDV[4167:339864] send before [TX] <bb003600 05020000 00007e22 0d>
+2015-12-15 19:27:38.016 AsReaderCDV[4167:339864] isConnected = 0
+2015-12-15 19:27:38.016 AsReaderCDV[4167:339864] plugged = 0
+2015-12-15 19:27:38.016 AsReaderCDV[4167:339864] [TX] <bb003600 05020000 00007e22 0d>
+2015-12-15 19:49:28.513 AsReaderCDV[4345:351003] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Data/Application/FF1CF8F0-F5B0-4F27-9ECB-E46B8F47520F/Library/Cookies/com.asreader.cdvdemo.binarycookies
+2015-12-15 19:49:29.022 AsReaderCDV[4345:351003] Apache Cordova native platform version 3.9.1 is starting.
+2015-12-15 19:49:29.023 AsReaderCDV[4345:351003] Multi-tasking -> Device: YES, App: YES
+2015-12-15 19:49:29.048 AsReaderCDV[4345:351003] Unlimited access to network resources
+2015-12-15 19:49:29.069 AsReaderCDV[4345:351003] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-12-15 19:49:30.337 AsReaderCDV[4345:351003] Resetting plugins due to page load.
+2015-12-15 19:49:30.661 AsReaderCDV[4345:351003] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Bundle/Application/837E6D1F-D28A-42CD-B04C-C8047770FA89/AsReaderCDV.app/www/index.html
+2015-12-15 19:49:30.764 AsReaderCDV[4345:351003] -[AsReader pluginInitialize],called
+2015-12-15 19:49:30.765 AsReaderCDV[4345:351003] -[AsReader barcodeRcp],called
+2015-12-15 19:49:30.772 AsReaderCDV[4345:351003] -[AsReader rfidRcp],called
+2015-12-15 19:49:30.773 AsReaderCDV[4345:351003] -[AsReader setBarcodePluggedListener:],called
+2015-12-15 19:49:31.007 AsReaderCDV[4345:351003] -[AsReader setRfidPluggedListener:],called
+2015-12-15 19:49:31.007 AsReaderCDV[4345:351003] -[AsReader setBarcodeStringListener:],called
+2015-12-15 19:49:31.008 AsReaderCDV[4345:351003] -[AsReader setRfidPcEpcStringListener:],called
+2015-12-15 19:49:31.008 AsReaderCDV[4345:351003] -[AsReader setRfidPcEpcDataListener:],called
+2015-12-15 19:49:31.008 AsReaderCDV[4345:351003] -[AsReader setRfidEpcDataListener:],called
+2015-12-15 19:49:31.008 AsReaderCDV[4345:351003] -[AsReader setRfidEpcDataWithRssiListener:],called
+2015-12-15 19:49:31.008 AsReaderCDV[4345:351003] -[AsReader setBarcodePowerListener:],called
+2015-12-15 19:49:31.008 AsReaderCDV[4345:351003] -[AsReader setRfidPowerListener:],called
+2015-12-15 19:49:31.009 AsReaderCDV[4345:351003] Received Event: deviceready
+2015-12-15 19:49:31.781 AsReaderCDV[4345:351003] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2015-12-15 19:49:31.781 AsReaderCDV[4345:351003] getting a list of accessories
+2015-12-15 19:49:31.782 AsReaderCDV[4345:351003] Found 0 accessories
+2015-12-15 19:49:31.782 AsReaderCDV[4345:351003] looking for jp.co.asx.asreader.barcode
+2015-12-15 19:49:31.782 AsReaderCDV[4345:351003] Scanned the list of accessories
+2015-12-15 19:49:31.782 AsReaderCDV[4345:351003] getting a list of accessories
+2015-12-15 19:49:31.782 AsReaderCDV[4345:351003] Found 0 accessories
+2015-12-15 19:49:31.783 AsReaderCDV[4345:351003] looking for jp.co.asx.asreader.rfid
+2015-12-15 19:49:31.783 AsReaderCDV[4345:351003] Scanned the list of accessories
+2015-12-15 19:49:31.783 AsReaderCDV[4345:351003] getting a list of accessories
+2015-12-15 19:49:31.783 AsReaderCDV[4345:351003] Found 0 accessories
+2015-12-15 19:49:31.783 AsReaderCDV[4345:351003] looking for jp.co.asx.asreader.6dongle.barcode
+2015-12-15 19:49:31.783 AsReaderCDV[4345:351003] Scanned the list of accessories
+2015-12-15 19:49:31.784 AsReaderCDV[4345:351003] getting a list of accessories
+2015-12-15 19:49:31.784 AsReaderCDV[4345:351003] Found 0 accessories
+2015-12-15 19:49:31.784 AsReaderCDV[4345:351003] looking for jp.co.asx.asreader.6dongle.rfid
+2015-12-15 19:49:31.784 AsReaderCDV[4345:351003] Scanned the list of accessories
+2015-12-15 19:49:31.784 AsReaderCDV[4345:351003] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2015-12-15 19:49:31.786 AsReaderCDV[4345:351003] initWithProtocol
+2015-12-15 19:49:31.786 AsReaderCDV[4345:351003] isConnected = 0
+2015-12-15 19:49:31.787 AsReaderCDV[4345:351003] plugged = 0
+2015-12-15 19:49:31.787 AsReaderCDV[4345:351003] -[AsReader pluggedBarcode:],called
+2015-12-15 19:49:31.792 AsReaderCDV[4345:351003] isConnected = 0
+2015-12-15 19:49:31.792 AsReaderCDV[4345:351003] plugged = 0
+2015-12-15 19:49:31.792 AsReaderCDV[4345:351003] -[AsReader pluggedRfid:],called
+2015-12-15 19:49:31.792 AsReaderCDV[4345:351003] _rfidPluggedListenerCallbackId:AsReader1945096028
+2015-12-15 19:49:46.861 AsReaderCDV[4345:351003] -[AsReader startReadTagsWithParams:],called
+2015-12-15 19:49:46.862 AsReaderCDV[4345:351003] -[AsReader startReadTags:mtime:repeatCycle:],called
+2015-12-15 19:49:46.862 AsReaderCDV[4345:351003] -[AsReader rfidRcp],called
+2015-12-15 19:49:46.863 AsReaderCDV[4345:351003] send before [TX] <bb003600 05020000 00007e22 0d>
+2015-12-15 19:49:46.864 AsReaderCDV[4345:351003] isConnected = 0
+2015-12-15 19:49:46.864 AsReaderCDV[4345:351003] plugged = 0
+2015-12-15 19:49:46.864 AsReaderCDV[4345:351003] [TX] <bb003600 05020000 00007e22 0d>
+2015-12-15 19:49:46.864 AsReaderCDV[4345:351003] startReadTags return yes
+2015-12-15 19:50:16.783 AsReaderCDV[4345:351003] -[AsReader startReadTagsAndRssiWithParams:],called
+2015-12-15 19:50:16.783 AsReaderCDV[4345:351003] -[AsReader startReadTagsWithRssi:mtime:repeatCycle:],called
+2015-12-15 19:50:16.783 AsReaderCDV[4345:351003] -[AsReader rfidRcp],called
+2015-12-15 19:50:16.783 AsReaderCDV[4345:351003] send before [TX] <bb003800 05020000 00007e51 7a>
+2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] isConnected = 0
+2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] plugged = 0
+2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] [TX] <bb003800 05020000 00007e51 7a>
+2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] startReadTagsWithRssi return yes
