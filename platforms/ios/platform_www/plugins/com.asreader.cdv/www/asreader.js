@@ -1,4 +1,4 @@
-//  Disclaimer: IMPORTANT:  This AsReader software is supplied to you by AsReader
+cordova.define("com.asreader.cdv.asreader", function(require, exports, module) { //  Disclaimer: IMPORTANT:  This AsReader software is supplied to you by AsReader
 //  Inc. ("AsReader") in consideration of your agreement to the following
 //  terms, and your use, installation, modification or redistribution of
 //  this AsReader software constitutes acceptance of these terms.  If you do
@@ -66,6 +66,9 @@ module.exports = {
 	readBarcodeContinuously: function(success, error){
 		 exec(success, error, "AsReader", "readBarcodeContinuously", []);
 	},
+	stopReadBarcode: function(success, error){
+		 exec(success, error, "AsReader", "stopReadBarcode", []);
+	},
 	isBarcodePlugged: function(success, error){
 		 exec(success, error, "AsReader", "isBarcodePlugged", []);
 	},
@@ -130,6 +133,9 @@ module.exports = {
 	setRfidStartedReadTagListener: function(listener){
 		exec(listener, null, "AsReader", "setRfidStartedReadTagListener", []);
 	},
+	setRfidStartedReadTagWithRssiListener: function(listener){
+		exec(listener, null, "AsReader", "setRfidStartedReadTagWithRssiListener", []);
+	},
 	setRfidPcEpcStringListener: function(listener){
 		exec(listener, null, "AsReader", "setRfidPcEpcStringListener", []);
 	},
@@ -164,7 +170,7 @@ module.exports = {
 		exec(listener, null, "AsReader", "setRfidPluggedListener", []);
 	},
 	notifyRegionTo: function(listener){
-		exec(listener, null, "AsReader", "sendRegionTo", []);
+		exec(listener, null, "AsReader", "notifyRegionTo", []);
 	},
 	setRegionAndNotifyTo: function(region,listener,error){
 		exec(listener, error, "AsReader", "setRegionAndNotifyTo", [region]);
@@ -235,7 +241,21 @@ module.exports = {
 	},
 	updateRfidRegistryAndNotifyTo: function(listener,error){
 		exec(listener, error, "AsReader", "updateRfidRegistryAndNotifyTo", []);
-	}
+	},
+	notifyStopConditionTo: function(listener,error){
+		exec(listener, error, "AsReader", "notifyStopConditionTo", []);
+	},
+	setStopConditionAndNotifyTo: function(mtnu,mtime,repeatCycle,listener,error){
+		exec(listener, error, "AsReader", "setStopConditionAndNotifyTo", [mtnu,mtime,repeatCycle]);
+	},
+	notifySessionTo: function(listener,error){
+		exec(listener, error, "AsReader", "notifySessionTo", []);
+	},
+	setSessionAndNotifyTo: function(session,listener,error){
+		exec(listener, error, "AsReader", "setSessionAndNotifyTo", [session]);
+	},
 	
 };
 
+
+});

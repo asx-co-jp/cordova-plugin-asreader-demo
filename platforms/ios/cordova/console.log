@@ -3146,3 +3146,100 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] plugged = 0
 2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] [TX] <bb003800 05020000 00007e51 7a>
 2015-12-15 19:50:16.784 AsReaderCDV[4345:351003] startReadTagsWithRssi return yes
+2016-01-14 22:14:47.927 AsReaderCDV[6741:372181] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Data/Application/4DA8291D-9873-486A-BFE1-D402EFB62A65/Library/Cookies/com.asreader.cdvdemo.binarycookies
+2016-01-14 22:14:48.681 AsReaderCDV[6741:372181] Apache Cordova native platform version 3.9.1 is starting.
+2016-01-14 22:14:48.684 AsReaderCDV[6741:372181] Multi-tasking -> Device: YES, App: YES
+2016-01-14 22:14:48.719 AsReaderCDV[6741:372181] Unlimited access to network resources
+2016-01-14 22:14:48.747 AsReaderCDV[6741:372181] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2016-01-14 22:14:50.278 AsReaderCDV[6741:372181] Resetting plugins due to page load.
+2016-01-14 22:14:50.629 AsReaderCDV[6741:372181] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Bundle/Application/DBBAAA17-247F-466E-94DA-2C3BAE4564F3/AsReaderCDV.app/www/index.html
+2016-01-14 22:14:50.759 AsReaderCDV[6741:372181] -[AsReader pluginInitialize],called
+2016-01-14 22:14:50.760 AsReaderCDV[6741:372181] -[AsReader barcodeRcp],called
+2016-01-14 22:14:50.761 AsReaderCDV[6741:372181] RcpApi init
+2016-01-14 22:14:50.763 AsReaderCDV[6741:372181] -[AsReader rfidRcp],called
+2016-01-14 22:14:50.765 AsReaderCDV[6741:372181] -[AsReader setReaderReadyListener:],called
+2016-01-14 22:14:51.006 AsReaderCDV[6741:372181] -[AsReader setBarcodePluggedListener:],called
+2016-01-14 22:14:51.008 AsReaderCDV[6741:372181] -[AsReader setRfidPluggedListener:],called
+2016-01-14 22:14:51.008 AsReaderCDV[6741:372181] -[AsReader setBarcodeStringListener:],called
+2016-01-14 22:14:51.008 AsReaderCDV[6741:372181] -[AsReader setRfidPcEpcStringListener:],called
+2016-01-14 22:14:51.009 AsReaderCDV[6741:372181] -[AsReader setRfidPcEpcDataListener:],called
+2016-01-14 22:14:51.009 AsReaderCDV[6741:372181] -[AsReader setRfidEpcDataListener:],called
+2016-01-14 22:14:51.009 AsReaderCDV[6741:372181] -[AsReader setRfidPcEpcStringWithRssiListener:],called
+2016-01-14 22:14:51.010 AsReaderCDV[6741:372181] -[AsReader setBarcodePowerListener:],called
+2016-01-14 22:14:51.010 AsReaderCDV[6741:372181] -[AsReader setRfidPowerListener:],called
+2016-01-14 22:14:51.010 AsReaderCDV[6741:372181] Received Event: deviceready
+2016-01-14 22:14:51.763 AsReaderCDV[6741:372181] onTick
+2016-01-14 22:14:51.764 AsReaderCDV[6741:372181] RcpApi onTick
+2016-01-14 22:14:51.764 AsReaderCDV[6741:372181] UartMgr
+2016-01-14 22:14:51.775 AsReaderCDV[6741:372181] UartMgr.mm protocols: (
+    "jp.co.asx.asreader.barcode",
+    "jp.co.asx.asreader.rfid",
+    "jp.co.asx.asreader.6dongle.barcode",
+    "jp.co.asx.asreader.6dongle.rfid"
+)
+2016-01-14 22:14:51.775 AsReaderCDV[6741:372181] getting a list of accessories
+2016-01-14 22:14:51.776 AsReaderCDV[6741:372181] Found 0 accessories
+2016-01-14 22:14:51.776 AsReaderCDV[6741:372181] looking for jp.co.asx.asreader.barcode
+2016-01-14 22:14:51.776 AsReaderCDV[6741:372181] Scanned the list of accessories
+2016-01-14 22:14:51.776 AsReaderCDV[6741:372181] getting a list of accessories
+2016-01-14 22:14:51.776 AsReaderCDV[6741:372181] Found 0 accessories
+2016-01-14 22:14:51.777 AsReaderCDV[6741:372181] looking for jp.co.asx.asreader.rfid
+2016-01-14 22:14:51.777 AsReaderCDV[6741:372181] Scanned the list of accessories
+2016-01-14 22:14:51.777 AsReaderCDV[6741:372181] getting a list of accessories
+2016-01-14 22:14:51.777 AsReaderCDV[6741:372181] Found 0 accessories
+2016-01-14 22:14:51.777 AsReaderCDV[6741:372181] looking for jp.co.asx.asreader.6dongle.barcode
+2016-01-14 22:14:51.778 AsReaderCDV[6741:372181] Scanned the list of accessories
+2016-01-14 22:14:51.778 AsReaderCDV[6741:372181] getting a list of accessories
+2016-01-14 22:14:51.778 AsReaderCDV[6741:372181] Found 0 accessories
+2016-01-14 22:14:51.778 AsReaderCDV[6741:372181] looking for jp.co.asx.asreader.6dongle.rfid
+2016-01-14 22:14:51.778 AsReaderCDV[6741:372181] Scanned the list of accessories
+2016-01-14 22:14:51.778 AsReaderCDV[6741:372181] initWithProtocol protocol : jp.co.asx.asreader.6dongle.rfid
+2016-01-14 22:14:51.782 AsReaderCDV[6741:372181] initWithProtocol
+2016-01-14 22:14:51.782 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.782 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.783 AsReaderCDV[6741:372181] UartMgr
+2016-01-14 22:14:51.783 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.783 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.783 AsReaderCDV[6741:372181] plugStatusChanged
+2016-01-14 22:14:51.784 AsReaderCDV[6741:372181] -[AsReader pluggedBarcode:],called
+2016-01-14 22:14:51.790 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.790 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.790 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.790 AsReaderCDV[6741:372181] stream status ====> 0
+2016-01-14 22:14:51.791 AsReaderCDV[6741:372181] -[AsReader pluggedRfid:],called
+2016-01-14 22:14:51.791 AsReaderCDV[6741:372181] _rfidPluggedListenerCallbackId:AsReader1036235486
+2016-02-06 13:24:33.731 AsReaderCDV[26663:330440] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Data/Application/D9868BFB-BF38-4B4A-BDBD-ABA4E2C67E52/Library/Cookies/com.asreader.cdvdemo.binarycookies
+2016-02-06 13:24:34.159 AsReaderCDV[26663:330440] Apache Cordova native platform version 3.9.1 is starting.
+2016-02-06 13:24:34.159 AsReaderCDV[26663:330440] Multi-tasking -> Device: YES, App: YES
+2016-02-06 13:24:34.177 AsReaderCDV[26663:330440] Unlimited access to network resources
+2016-02-06 13:24:34.193 AsReaderCDV[26663:330440] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2016-02-06 13:24:35.283 AsReaderCDV[26663:330440] Resetting plugins due to page load.
+2016-02-06 13:24:35.519 AsReaderCDV[26663:330440] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Bundle/Application/825150B9-ED47-4924-AA67-5F1E5A30D32D/AsReaderCDV.app/www/index.html
+2016-02-06 13:27:36.433 AsReaderCDV[26722:331646] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Data/Application/BC1B32D8-B161-4116-994B-04D465FD22A9/Library/Cookies/com.asreader.cdvdemo.binarycookies
+2016-02-06 13:27:36.527 AsReaderCDV[26722:331646] Apache Cordova native platform version 3.9.1 is starting.
+2016-02-06 13:27:36.528 AsReaderCDV[26722:331646] Multi-tasking -> Device: YES, App: YES
+2016-02-06 13:27:36.530 AsReaderCDV[26722:331646] Unlimited access to network resources
+2016-02-06 13:27:36.535 AsReaderCDV[26722:331646] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2016-02-06 13:27:36.784 AsReaderCDV[26722:331646] Resetting plugins due to page load.
+2016-02-06 13:27:36.849 AsReaderCDV[26722:331646] Finished load of: file:///Users/bsetsu/Library/Developer/CoreSimulator/Devices/522653DA-1326-4695-8D0A-1C6E6D79E0F1/data/Containers/Bundle/Application/83E5A64C-10D1-400B-A74B-85065D1B8B0F/AsReaderCDV.app/www/index.html

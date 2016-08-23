@@ -184,7 +184,59 @@ var app = {
 		var rfidPcEpcDataWithRssiReceived = function(dic){
 			alert("PcEpc:" + dic["PcEpc"]+" Rssi:" + dic["Rssi"]);
 		}
+		var configSuccess = function(status){
+			alert(status);
+		}
+		var configFail = function(status){
+			alert(status);
+		}
+		var readerReady = function(status){
+			try{
+
+				alert("readerReady:"+status);
+				asreader.configureRfid(configSuccess,configFail,"YES","YES","NO");
+				asreader.setRfidStartedReadTagListener(startedReaderTagListener);
+			}catch(err){
+				alert(err.message);
+			}
+		}
+		var receiveStopCon = function(condition){
+			alert(condition);
+		}
+		var conSetted = function(status){
+			alert(status);
+		}
+		var errf = function(msg){
+			alert(msg);
+		}
+		var startedReaderTagWithRssiListener = function(status){
+			alert("startedReaderTagWithRssiListener:"+ status);
+		}
+		var startedReaderTagListener = function(status){
+			try{
+				var ti = new Date().getTime();
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+ ti + "  "+"startedReaderTagListener:"+ status;
+			}catch(err){
+				alert(err.message);
+			}
+			
+		}
+		var writelog = function(msg){
+			try{
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+ msg;
+			}catch(err){
+				alert(err.message);
+			}
+		};
+		var writeErrlog = function(msg){
+			try{
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n ERR:"+ msg;
+			}catch(err){
+				alert(err.message);
+			}
+		};
 		//asreader.powerOn("ON", success, failure);
+		asreader.setReaderReadyListener(readerReady);
 		asreader.setBarcodePluggedListener(barcodeReaderPlugged);
 		asreader.setRfidPluggedListener(rfidReaderPlugged);
 		asreader.setBarcodeStringListener(barcodeReceived);
@@ -197,23 +249,55 @@ var app = {
 
 		asreader.setBarcodePowerListener(barcodePowerListener);
 		asreader.setRfidPowerListener(rfidPowerListener);
+		asreader.setRfidStartedReadTagWithRssiListener(startedReaderTagWithRssiListener);
+		// asreader.setRfidStartedReadTagListener(startedReaderTagListener);
 		
-		
-		document.getElementById("barcodePowerOn").addEventListener('click',function(){asreader.barcodePowerOn(null,null);});
-		document.getElementById("barcodePowerOff").addEventListener('click',function(){asreader.barcodePowerOff(null,null);});
-		document.getElementById("readBarcode").addEventListener('click',function(){asreader.readBarcode(null,null);});
-		//document.getElementById("readBarcodeContinuously").addEventListener('click',function(){asreader.readBarcodeContinuously(null,null);});
-		document.getElementById("stopReadBarcode").addEventListener('click',function(){asreader.stopReadBarcode(null,null);});
+		document.getElementById("barcodePowerOn").addEventListener('click',function(){asreader.barcodePowerOn(writelog,writeErrlog);});
+		document.getElementById("barcodePowerOff").addEventListener('click',function(){asreader.barcodePowerOff(writelog,writeErrlog);});
+		document.getElementById("readBarcode").addEventListener('click',function(){asreader.readBarcode(writelog,writeErrlog);});
+		document.getElementById("readBarcodeContinuously").addEventListener('click',function(){asreader.readBarcodeContinuously(writelog,writeErrlog);});
+		document.getElementById("stopReadBarcode").addEventListener('click',function(){asreader.stopReadBarcode(writelog,writeErrlog);});
+		document.getElementById("setEncodingJIS").addEventListener('click',function(){asreader.setEncoding(writelog,writeErrlog,'ShiftJIS');});
+		document.getElementById("setEncodingUTF8").addEventListener('click',function(){asreader.setEncoding(writelog,writeErrlog,'UTF8');});
+		document.getElementById("setEncodingUTF80").addEventListener('click',function(){asreader.setEncoding(writelog,writeErrlog,'UTF80');});
 		
 		document.getElementById("rfidPowerOn").addEventListener('click',function(){asreader.rfidPowerOn(null,null);});
 		document.getElementById("rfidPowerOff").addEventListener('click',function(){asreader.rfidPowerOff(null,null);});
 		document.getElementById("startReadTags").addEventListener('click',function(){asreader.startReadTags(null,null);});
 
-		document.getElementById("startReadTagsWithParams").addEventListener('click',function(){asreader.startReadTagsWithParams(null,null,0,0,0);});
-		document.getElementById("startReadTagsAndRssiWithParams").addEventListener('click',function(){asreader.startReadTagsAndRssiWithParams(null,null,0,0,0);});
+		document.getElementById("startReadTagsWithParams").addEventListener('click',function(){asreader.startReadTagsWithParams(null,null,0,0,300);});
+		document.getElementById("startReadTagsAndRssiWithParams").addEventListener('click',function(){asreader.startReadTagsAndRssiWithParams(null,null,0,0,10);});
 		
 		document.getElementById("stopReadTags").addEventListener('click',function(){asreader.stopReadTags(null,null);});
 		
+		document.getElementById("notifyStopConditionTo").addEventListener('click',function(){
+			
+			try{
+				alert(receiveStopCon);
+				asreader.notifyStopConditionTo (receiveStopCon,errf);
+			}catch(err){
+				alert(err.message);
+			}
+			
+		});
+		document.getElementById("setStopConditionAndNotifyTo").addEventListener('click',function(){
+			try{
+				//alert(conSetted);
+				asreader.setStopConditionAndNotifyTo(0,0,300,conSetted,errf);
+			}catch(err){
+				alert(err.message);
+			}
+			
+		});
+		document.getElementById("btnIsOpen").addEventListener('click',function(){
+			try{
+				//alert(conSetted);
+				asreader.isRfidOpened(receiveStopCon,receiveStopCon);
+			}catch(err){
+				alert(err.message);
+			}
+			
+		});
 
 		document.getElementById("clearall").addEventListener('click',function(){document.getElementById("datareceived").value = '';});
 		}catch(err){

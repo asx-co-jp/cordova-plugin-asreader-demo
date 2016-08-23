@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AsReader\"><param name=\"ios-package\" value=\"AsReader\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UISupportedExternalAccessoryProtocols": [
+                        {
+                            "xml": "<array><string>jp.co.asx.asreader.barcode</string><string>jp.co.asx.asreader.rfid</string><string>jp.co.asx.asreader.6dongle.barcode</string><string>jp.co.asx.asreader.6dongle.rfid</string></array>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.asreader.demo"
+        },
+        "com.asreader.cdv": {
+            "PACKAGE_NAME": "com.asreader.cdvdemo"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-console/www/logger.js",
+            "id": "cordova-plugin-console.logger",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "cordova.logger"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+            "id": "cordova-plugin-console.console",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "console"
+            ]
+        },
+        {
+            "file": "plugins/com.asreader.cdv/www/asreader.js",
+            "id": "com.asreader.cdv.asreader",
+            "pluginId": "com.asreader.cdv",
+            "clobbers": [
+                "asreader"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-console": "1.0.1",
+        "com.asreader.cdv": "0.0.6"
+    }
+}

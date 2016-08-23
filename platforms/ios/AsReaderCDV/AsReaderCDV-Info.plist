@@ -65,9 +65,9 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>
-    <string></string>
+    <string/>
     <key>NSMainNibFile~ipad</key>
-    <string></string>
+    <string/>
     <key>UILaunchImages</key>
     <array>
       <dict>
@@ -178,5 +178,10 @@
       <string>jp.co.asx.asreader.6dongle.barcode</string>
       <string>jp.co.asx.asreader.6dongle.rfid</string>
     </array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
+    </dict>
   </dict>
 </plist>
