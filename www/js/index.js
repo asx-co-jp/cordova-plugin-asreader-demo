@@ -49,6 +49,20 @@ var app = {
 	  }
 	  return buf;
 	},
+	hexToBytes: function (hex) {
+	    for (var bytes = [], c = 0; c < hex.length; c += 2)
+	    bytes.push(parseInt(hex.substr(c, 2), 16));
+	    return bytes;
+	},
+
+	// Convert a byte array to a hex string
+	bytesToHex: function (bytes) {
+	    for (var hex = [], i = 0; i < bytes.length; i++) {
+	        hex.push((bytes[i] >>> 4).toString(16));
+	        hex.push((bytes[i] & 0xF).toString(16));
+	    }
+	    return hex.join("");
+	},
 	onDeviceReady: function() {
 		try{
 			
@@ -159,6 +173,32 @@ var app = {
 			//alert(String.fromCharCode.apply(null, new Uint16Array(pcEpcData)));
 			//document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+pcEpcString;
 		}
+		var rfidEpcDataTidReceived = function(epcAndTid){
+			
+			try{
+				alert(epcAndTid);
+			}catch(err){
+				alert(err.message);
+			}
+			
+			//alert(String.fromCharCode.apply(null, new Uint16Array(pcEpcData)));
+			//document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+pcEpcString;
+		}
+		
+		var rfidEpcStrTidReceived = function(epcAndTid){
+			
+			try{
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n ----EPC&TID----";
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n EPC:"+ epcAndTid["Epc"];
+				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n TID:"+ epcAndTid["Tid"];
+				
+			}catch(err){
+				alert(err.message);
+			}
+			
+			//alert(String.fromCharCode.apply(null, new Uint16Array(pcEpcData)));
+			//document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+pcEpcString;
+		}
 		var barcodePowerListener = function(power){
 			
 			//alert(String.fromCharCode.apply(null, new Uint16Array(pcEpcData)));
@@ -235,6 +275,7 @@ var app = {
 				alert(err.message);
 			}
 		};
+		
 		//asreader.powerOn("ON", success, failure);
 		asreader.setReaderReadyListener(readerReady);
 		asreader.setBarcodePluggedListener(barcodeReaderPlugged);
@@ -250,6 +291,9 @@ var app = {
 		asreader.setBarcodePowerListener(barcodePowerListener);
 		asreader.setRfidPowerListener(rfidPowerListener);
 		asreader.setRfidStartedReadTagWithRssiListener(startedReaderTagWithRssiListener);
+		//asreader.setRfidEpcDataWithTidListener(rfidEpcDataTidReceived);
+		asreader.setRfidEpcStringWithTidListener(rfidEpcStrTidReceived);
+		
 		// asreader.setRfidStartedReadTagListener(startedReaderTagListener);
 		
 		document.getElementById("barcodePowerOn").addEventListener('click',function(){asreader.barcodePowerOn(writelog,writeErrlog);});
@@ -298,7 +342,43 @@ var app = {
 			}
 			
 		});
-
+		
+		//document.getElementById("startReadTagsAndTid").addEventListener('click',function(){asreader.startReadTagsAndTid(null,null);});
+		document.getElementById("setOutputPowerLevelAndNotifyTo").addEventListener('click',function(){asreader.setOutputPowerLevelAndNotifyTo(20,errf,errf);});
+		document.getElementById("startReadTagsAndTid").addEventListener('click',function(){asreader.startReadTagsAndTid(errf,errf);});
+		
+		document.getElementById("setSelectParamAndNotifyTo").addEventListener('click',function(){
+			try{
+				/*
+				var hex = "FF";
+			    for (var bytes = [], c = 0; c < hex.length; c += 2)
+			    bytes.push(parseInt(hex.substr(c, 2), 16));
+				*/
+				/*
+				var str = "3034";
+		  		var buf = new ArrayBuffer(str.length*2); // 2 bytes for each char
+		  		var bufView = new Uint16Array(buf);
+		  		for (var i=0, strLen=str.length; i<strLen; i++) {
+		  			bufView[i] = str.charCodeAt(i);
+		  		}
+			  	*/
+				var msg = "30 38";
+				/*
+				var arr = new Uint8Array(msg.split(" "), function(byte) {
+					return parseInt(byte, 16);
+				});
+				*/
+				var arr = new Uint8Array(msg.split(' ').map(function(h) { return parseInt(h, 16) }));
+				var buffer = arr.buffer;
+				
+				
+				asreader.setSelectParamAndNotifyTo(0x00,0x00,0x01,0x20,16,0x00,"30 35",errf,errf);
+			}catch(ex){
+				alert(ex);
+			}
+			
+		});
+		
 		document.getElementById("clearall").addEventListener('click',function(){document.getElementById("datareceived").value = '';});
 		}catch(err){
 			alert(err.message);
