@@ -117,7 +117,7 @@ var app = {
 				document.getElementById("deviceready").querySelector('.asr_bc_poweron').setAttribute('style', 'display:none;');
 			}
 		}
-		
+            
 		var rfidReaderPlugged = function(status){
 			if(status == 'YES'){
 				document.getElementById("deviceready").querySelector('.asr_rf_plugged').setAttribute('style', 'display:block;');
