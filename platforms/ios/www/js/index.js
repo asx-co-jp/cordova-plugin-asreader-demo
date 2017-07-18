@@ -263,7 +263,9 @@ var app = {
 		}
 		var writelog = function(msg){
 			try{
-				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+ msg;
+                if (msg != null) {
+                    document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+ msg;
+                }
 			}catch(err){
 				alert(err.message);
 			}
