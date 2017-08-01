@@ -220,6 +220,17 @@ var app = {
 				document.getElementById("deviceready").querySelector('.asr_rf_poweron').setAttribute('style', 'display:none;');
 			}
 		}
+            
+            
+        var comboPowerListener = function(power){
+            if(power == 'BARCODE'){
+                barcodeReaderPlugged('YES');
+            }else if(power == 'RFID'){
+                rfidReaderPlugged('YES');
+            }else{
+                barcodeReaderPlugged('NO');
+            }
+        }
 		
 		var rfidPcEpcDataWithRssiReceived = function(dic){
 			alert("PcEpc:" + dic["PcEpc"]+" Rssi:" + dic["Rssi"]);
@@ -263,7 +274,9 @@ var app = {
 		}
 		var writelog = function(msg){
 			try{
-				document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+ msg;
+                if (msg != null) {
+                    document.getElementById("datareceived").value = document.getElementById("datareceived").value+"\n"+ msg;
+                }
 			}catch(err){
 				alert(err.message);
 			}
@@ -293,6 +306,8 @@ var app = {
 		asreader.setRfidStartedReadTagWithRssiListener(startedReaderTagWithRssiListener);
 		//asreader.setRfidEpcDataWithTidListener(rfidEpcDataTidReceived);
 		asreader.setRfidEpcStringWithTidListener(rfidEpcStrTidReceived);
+            
+        asreader.setComboPluggedListener(comboPowerListener);
 		
 		// asreader.setRfidStartedReadTagListener(startedReaderTagListener);
 		
