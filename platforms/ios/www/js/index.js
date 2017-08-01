@@ -127,6 +127,72 @@ var app = {
 				document.getElementById("deviceready").querySelector('.asr_rf_poweron').setAttribute('style', 'display:none;');
 			}
 		}
+            
+            
+            var readerPlugged = function(status) {
+                if(status == 'YES'){
+                    asreader.getCommonReaderInfo(readerInfoSuccess,readerInfoFailure);
+                }else {
+                    document.getElementById("rfidPowerOn").disabled = true;
+                    document.getElementById("rfidPowerOff").disabled = true;
+                    document.getElementById("startReadTags").disabled = true;
+                    document.getElementById("btnIsOpen").disabled = true;
+                    document.getElementById("startReadTagsWithParams").disabled = true;
+                    document.getElementById("startReadTagsAndRssiWithParams").disabled = true;
+                    document.getElementById("notifyStopConditionTo").disabled = true;
+                    document.getElementById("setStopConditionAndNotifyTo").disabled = true;
+                    document.getElementById("startReadTagsAndTid").disabled = true;
+                    document.getElementById("setSelectParamAndNotifyTo").disabled = true;
+                    document.getElementById("setOutputPowerLevelAndNotifyTo").disabled = true;
+                    document.getElementById("stopReadTags").disabled = true;
+                    document.getElementById("barcodePowerOn").disabled = true;
+                    document.getElementById("barcodePowerOff").disabled = true;
+                    document.getElementById("readBarcode").disabled = true;
+                    document.getElementById("readBarcodeContinuously").disabled = true;
+                    document.getElementById("stopReadBarcode").disabled = true;
+                    document.getElementById("setEncodingJIS").disabled = true;
+                    document.getElementById("setEncodingUTF8").disabled = true;
+                    document.getElementById("setEncodingUTF80").disabled = true;
+                    document.getElementById("deviceready").querySelector('.asr_bc_plugged').setAttribute('style', 'display:none;');
+                    document.getElementById("deviceready").querySelector('.asr_bc_poweron').setAttribute('style', 'display:none;');
+                    document.getElementById("deviceready").querySelector('.asr_rf_plugged').setAttribute('style', 'display:none;');
+                    document.getElementById("deviceready").querySelector('.asr_rf_poweron').setAttribute('style', 'display:none;');
+                }
+            }
+            
+            var readerInfoSuccess = function(info) {
+                var canUseRFID = info["bCanUseRFID"];
+                var canUseBarcode = info["bCanUseBarcode"];
+                if (canUseRFID) {
+                    document.getElementById("rfidPowerOn").disabled = false;
+                    document.getElementById("rfidPowerOff").disabled = false;
+                    document.getElementById("startReadTags").disabled = false;
+                    document.getElementById("btnIsOpen").disabled = false;
+                    document.getElementById("startReadTagsWithParams").disabled = false;
+                    document.getElementById("startReadTagsAndRssiWithParams").disabled = false;
+                    document.getElementById("notifyStopConditionTo").disabled = false;
+                    document.getElementById("setStopConditionAndNotifyTo").disabled = false;
+                    document.getElementById("startReadTagsAndTid").disabled = false;
+                    document.getElementById("setSelectParamAndNotifyTo").disabled = false;
+                    document.getElementById("setOutputPowerLevelAndNotifyTo").disabled = false;
+                    document.getElementById("stopReadTags").disabled = false;
+                }
+                if (canUseBarcode) {
+                    document.getElementById("barcodePowerOn").disabled = false;
+                    document.getElementById("barcodePowerOff").disabled = false;
+                    document.getElementById("readBarcode").disabled = false;
+                    document.getElementById("readBarcodeContinuously").disabled = false;
+                    document.getElementById("stopReadBarcode").disabled = false;
+                    document.getElementById("setEncodingJIS").disabled = false;
+                    document.getElementById("setEncodingUTF8").disabled = false;
+                    document.getElementById("setEncodingUTF80").disabled = false;
+                }
+            }
+            
+            var readerInfoFailure = function(msg) {
+                
+            }
+            
 		
 		var rfidPcEpcStringReceived = function(pcEpcString){
 			//alert(pcEpcString);
@@ -220,17 +286,6 @@ var app = {
 				document.getElementById("deviceready").querySelector('.asr_rf_poweron').setAttribute('style', 'display:none;');
 			}
 		}
-            
-            
-        var comboPowerListener = function(power){
-            if(power == 'BARCODE'){
-                barcodeReaderPlugged('YES');
-            }else if(power == 'RFID'){
-                rfidReaderPlugged('YES');
-            }else{
-                barcodeReaderPlugged('NO');
-            }
-        }
 		
 		var rfidPcEpcDataWithRssiReceived = function(dic){
 			alert("PcEpc:" + dic["PcEpc"]+" Rssi:" + dic["Rssi"]);
@@ -307,7 +362,7 @@ var app = {
 		//asreader.setRfidEpcDataWithTidListener(rfidEpcDataTidReceived);
 		asreader.setRfidEpcStringWithTidListener(rfidEpcStrTidReceived);
             
-        asreader.setComboPluggedListener(comboPowerListener);
+        asreader.setPluggedListener(readerPlugged);
 		
 		// asreader.setRfidStartedReadTagListener(startedReaderTagListener);
 		
